@@ -1,0 +1,2307 @@
+<html>
+<head>
+	<!-- Add bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Add icon set -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- Add custom css changes -->
+	<link rel="stylesheet" href="/static/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<style>
+		.alert {
+		  padding: 20px;
+		  background-color: #1522b0;
+		  color: white;
+		}
+
+		.closebtn {
+		  margin-left: 15px;
+		  color: white;
+		  font-weight: bold;
+		  float: right;
+		  font-size: 22px;
+		  line-height: 20px;
+		  cursor: pointer;
+		  transition: 0.3s;
+		}
+
+		.closebtn:hover {
+		  color: black;
+		}
+		</style>
+	
+	
+</head>
+
+<body class="body-color">
+<div class="banner jumbotron text-center">
+	<h1><strong>Bioretention and Rain Garden Assessment Program</strong></h1>
+	<h2>Functional Assessment Form</h2>
+</div>
+
+
+<hr>
+<form method="post" action="/submit">
+	<div class="container-fluid d-flex justify-content-center">
+		<section class="center">
+			<div class="table__wrapper">
+				<table class="table" style="background-color: #e4e4e4;">
+					<thead>
+						<tr>
+							<th></th>
+							<th><center>Team Names</center></th>
+							<th><center>Cell# or Email</center></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row" class="d-md-none">Team Info</th>
+							<th scope="row" class="d-md-none" style="background-color: rgba(10,0,0,0.10);">Team Member 1</th>
+							<td minlength=10 class="d-none d-md-table-cell">1.</td>
+							<td class="d-md-none">Name:</td>
+							<td><input type="text" class="form-control" placeholder="e.g. Bryan Smith" aria-label="e.g. Bryan Smith" maxlength="50" name="name1"></td>
+							<td class="d-md-none">Cell # or Email:</td>
+							<td><input type="text" class="form-control" placeholder="e.g. example@gmail.com" maxlength="50" name="numEmail1"></td>
+						</tr>
+						<tr>
+							<th scope="row" class="d-md-none" style="background-color: rgba(10,0,0,0.10);">Team Member 2</th>
+							<td class="d-none d-md-table-cell">2.</td>
+							<td class="d-md-none">Name:</td>
+							<td><input type="text" class="form-control" aria-describedby="basic-addon1" maxlength="50" name="name2"></td>
+							<td class="d-md-none">Cell # or Email:</td>
+							<td><input type="text" class="form-control" maxlength="50" name="numEmail2"></td>
+						</tr>
+						<tr>
+							<th scope="row" class="d-md-none" style="background-color: rgba(10,0,0,0.10);">Team Member 3</th>
+							<td class="d-none d-md-table-cell">3.</td>
+							<td class="d-md-none">Name:</td>
+							<td><input type="text" class="form-control" maxlength="50" name="name3"></td>
+							<td class="d-md-none">Cell # or Email:</td>
+							<td><input type="text" class="form-control" maxlength="50" name="numEmail3"></td>
+						</tr>
+						<tr>
+							<th scope="row" class="d-md-none" style="background-color: rgba(10,0,0,0.10);">Team Member 4</th>
+							<td class="d-none d-md-table-cell">4.</td>
+							<td class="d-md-none">Name:</td>
+							<td><input type="text" class="form-control" maxlength="50" name="name4"></td>
+							<td class="d-md-none">Cell # or Email:</td>
+							<td><input type="text" class="form-control" maxlength="50" name="numEmail4"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</div>
+	<br>
+
+	<!--section I begin-->
+	<div class="container-fluid section mt-8 mb-8 pt-2 pb-3">
+		<h3 class="ml-lg-2 mr-lg-2"><u>I. BACKGROUND INFORMATION</u>
+		<!-- info button -->
+		<button class="btn" title="BackgroundInfo.pdf">
+			<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1KuY3iL9WMYJe5MErSQwlNiTLN7SwW4i4/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+		</button>
+		</h3>
+		<div class="d-flex justify-content-left mt-2 ml-2 mr-2 text-responsive">Please fill out all information</div><br>
+		<div class="row mt-2 ml-lg-2">
+			<div class="col-12 col-lg-5">
+				<label for="site_name text-responsive">Site Name:</label>
+				<button class="btn" title="SiteName.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1BvRuznCEH44F6l7nZFkMCLEzNAx1hvlR/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+				<input class="form-control" type="text" maxlength="50" name="site_name">
+			</div>
+		</div>
+		<div class="row mt-2 ml-lg-2">
+			<div class="col-6 col-lg-2">
+				<label for="survey_date">Survey Date:</label>
+				<input class="form-control" style="width: 110%" type="date" maxlength="30" name="survey_date">
+			</div>
+			<div class="col-6 col-lg-2">
+				<label for="start_time">Start Time:</label>
+				<input class="form-control" type="time" name="start_time">
+			</div>
+			<div class="col-lg-3">
+				<label for="group_code">Group Code:</label>
+				<input class="form-control" type="text" maxlength="50" name="group_code">
+			</div>
+		</div>
+		<div class="row mt-1 mt-lg-2 ml-lg-2 mr-lg-2">
+			<div class="col-12 col-lg-6">
+				<label for="address">Address:</label>
+				<button class="btn" title="Address.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1a0Eexx_hCKq_Db84i3LP6yUWnNpTxW8M/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+				<input class="form-control" type="text" maxlength="100" name="address">
+			</div>
+			<div class="col-lg-2">
+				<label for="city">City:</label>
+				<input class="form-control" type="text" maxlength="50" name="city">
+			</div>
+			<div class="col-lg-2">
+				<label for="county">County:</label>
+				<input class="form-control" type="text" maxlength="50" name="county">
+			</div>
+		</div>
+		<div class="d-flex justify-content-left mt-4 ml-lg-2 mr-2">
+			<p>Location (<a href="https://www.google.com/maps" title="https://www.google.com/maps" target="_blank">maps.google.com</a> and <a href="http://www.soundimpacts.org/en/projects/list/tracts/all/" title="http://www.soundimpacts.org/en/projects/list/tracts/all/" target="_blank"> SoundImpacts.org</a>):</p>
+			<button class="btn" title="Location.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1YPpwtPpqcMBglL-D1a4CA7rXERCF-KVt/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+			</button>
+
+		</div>
+		<div class="row mt-2 ml-2 mr-lg-2">
+			<div class="col-lg-2">
+				<label for="lat">Latitude:</label>
+				<input class="form-control" placeholder="47.608070" step="any" type="number" name="lat">
+			</div>
+			<div class="col-lg-2">
+				<label for="lon">Longitude:</label>
+				<input class="form-control" placeholder="-122.335121" step="any" type="number" name="lon">
+			</div>
+			<div class="col-lg-2">
+				<label for="Sound_Impacts">Sound Impacts ID:</label>
+				<input class="form-control" type="text" maxlength="30" name="Sound_Impacts">
+			</div>
+		</div>
+		<div class="d-flex justify-content-left mt-4 ml-lg-2 mr-2">
+			<p>Rain Fall (from <a href="https://www.wunderground.com/" title="https://www.wunderground.com/" target="_blank"> wunderground.com</a>) in inches:</p>
+			<button class="btn" title="Rainfall.pdf">
+				<a class="fa fa-info-circle" href="https://drive.google.com/file/d/11GI89shem4IdpqjXSxTHfnwalSA-jIkZ/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+			</button>
+
+		</div>
+		<div class="row mt-2 ml-2 mr-lg-2">
+			<div class="col-lg-2">
+				<label for="today_rain">Today:</label>
+				<input class="form-control" type="number" min="0" step="0.01" name="today_rain">
+			</div>
+			<div class="col-lg-2">
+				<label for="yesterday_rain">Yesterday:</label>
+				<input class="form-control" type="number" min="0" step="0.01" name="yesterday_rain">
+			</div>
+			<div class="col-lg-2">
+				<label for="twodays_rain">Two Days Ago:</label>
+				<input class="form-control" type="number" min="0" step="0.01" name="twodays_rain">
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!--section II begin-->
+	<div class="container-fluid section mt-8 mb-8 pt-2 pb-3">
+		<h3 class="ml-lg-2 mr-lg-2"><u>II. SITE OVERVIEW:</u>
+		<button class="btn" title="SiteOverview.pdf">
+			<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1BvRuznCEH44F6l7nZFkMCLEzNAx1hvlR/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+		</button>
+		</h3>
+		<div class="row ml-lg-2 mr-lg-2">
+			<div class="col-lg-2">
+				<label for="site-type">Type of site:</label>
+				<select class="form-control" name="site-type" id="site-type">
+					<option value="0"></option>
+					<option value="1">Rain Garden</option>
+					<option value="2">Bioretention</option>
+					<option value="3">Unknown</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="row ml-lg-2 mr-lg-2">
+			<div class="col-lg-2">
+				<label for="site-age">Age of site:</label>
+				<button class="btn" title="SiteAge.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1erOvp41VTV7LxQLIfgYVLzxTSO0zQnBI/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+
+				<select class="form-control" name="site-age" id="site-age">
+					<option value="0"></option>
+					<option value="1">&lt1 year</option>
+					<option value="2">1-3 years</option>
+					<option value="3">3-5 years</option>
+					<option value="4">>5 years</option>
+					<option value="5">Unknown</option>
+				</select><br>
+			</div>
+		</div>
+		
+		<div class="row ml-lg-4 mr-lg-4">
+			<span class="col-12">
+				<label>Source of 'Age':</label>
+			</span>
+			<span class="col-12 col-lg-6 ml-2">
+				<input class="ml-2" type="radio" id="VS" name="age_source_radio" value="1">
+				<label class="ml-2" for="VS">Verifiable Source</label>
+			</span>
+			<span class="col-12 col-lg-6 ml-2">
+				<input class="ml-2" type="radio" id="Es" name="age_source_radio" value="2">
+				<label class="ml-2" for="Es">Estimate</label>
+			</span>
+		</div>
+		<br>
+		<div class="row ml-lg-2 mr-lg-2">
+			<div class="col-lg-8">
+				<label for="age_source_desc">Description/Explanation for source of age:</label>
+				<textarea class="form-control" type="text" placeholder="Description/Explanation here..." maxlength="250" name="age_source_desc"></textarea>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!--section III begin-->
+	<div class="container-fluid section mt-8 mb-8">
+		<div class="pt-2">
+			<h3 class="ml-lg-2 mr-lg-2"><u>III.  CONTRIBUTING AREA/HYDROLOGY</u>
+			<button class="btn" title="ContributingHydrology.pdf">
+				<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1kC_4PqjvuTu419waSdlqIp8RlJEuDgut/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+			</button>
+			</h3>
+			<p class="ml-2 ml-lg-4">Before beginning, the team should identify where each zone of the rain garden begins and ends.
+			Identify the outside edges of the rain garden and the different zones.</p>
+			<p class="ml-3 ml-lg-6">- Zone 1 is the flat area on bottom.  Zone 1 will be divided up into thirds and called Sections 1A, 1B and 1C.</p>
+			<p class="ml-3 ml-lg-6">- Zone 2 is bottom of overflow to top of Zone 1</p>
+			<p class="ml-3 ml-lg-6">- Zone 3 is from bottom of overflow up to defined edge.  If the edge is unclear, zone 3 ends one meter out from
+			the level of the overflow water level.</p>
+		</div>
+
+		<div class="mt-8 mb-8 pt-3 pb-3">
+			<h4 class="ml-lg-3 mr-lg-3">
+				III-1. Contributing water source (check all that apply):
+				<button class="btn" title="ContributingWater.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1TPiXKVsduSuh8NpcBiqz8YeT9BA0T8k4/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4>
+			<div class="ml-lg-4 mr-lg-4">
+				<div class="d-flex align-items-center justify-content-start">
+					<input type="checkbox" id="WS1" name="WS1" value="1">
+					<label for="WS1" class="col-11">Rooftop</label>
+				</div>
+				<div class="d-flex align-items-center justify-content-start">
+					<input type="checkbox" id="WS2" name="WS2" value="1">
+					<label for="WS2" class="col-11">Driveway</label>
+					</div>
+				<div class="d-flex align-items-center justify-content-start">
+					<input type="checkbox" id="WS3" name="WS3" value="1">
+					<label for="WS3" class="col-11">Lawn</label>
+				</div>
+				<div class="d-flex align-items-center justify-content-start">
+					<input type="checkbox" id="WS4" name="WS4" value="1">
+					<label for="WS4" class="col-11">Maintained Pasture</label>
+				</div>
+				<div class="d-flex align-items-center justify-content-start">
+					<input type="checkbox" id="WS5" name="WS5" value="1">
+					<label for="WS5" class="col-11">Residential Street, low use parking lot</label>
+				</div>
+				<div class="d-flex align-items-center justify-content-start">
+					<input type="checkbox" id="WS6" name="WS6" value="1">
+					<label for="WS6" class="col-11">Moderate use street, high use parking lot</label>
+				</div>
+				<div class="d-flex align-items-center justify-content-start">
+					<input type="checkbox" id="WS7" name="WS7" value="1">
+					<label for="WS7" class="col-11">High use street, livestock confinement area</label>
+				</div>
+				<div class="d-flex align-items-center justify-content-start">
+					<input type="checkbox" id="WS8" name="WS8" value="1">
+					<label for="WS8" class="col-11">Industrial or other high contaminant area</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="mt-8 mb- pt-3 pb-3">
+			<div class="ml-lg-3 mr-lg-3">
+			<h4>
+				III-2. Does overflow direct water away from facility?:
+				<button class="btn" title="Overflow.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/18oFdEfjO7js2slK5vYYQrzMBZLviwMe1/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4>
+			</div>
+			<div class="row ml-4 mr-4">
+				<span class="mr-2">Overflow 1:</span>
+				<span class="mr-2">
+					<input type="radio" id="Y" name="overflow_1_radio" value="1">
+					<label for="Y">Yes</label>
+				</span>
+				<span class="mr-2">
+					<input type="radio" id="N" name="overflow_1_radio" value="2" onchange="alertFunction1()">
+					<label for="N">No</label>
+				</span>
+				<span>
+					<input type="radio" id="UK" name="overflow_1_radio" value="3">
+					<label for="UK">Unknown</label>
+				</span>
+			</div>
+			
+			<div id="alert1" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Try to re-direct overflow! - (Overflow = No)
+			</div>
+			
+			
+			<div class="row ml-4 mr-4">
+				<span class="mr-2">Overflow 2:</span>
+				<span class="mr-2">
+					<input type="radio" id="Y" name="overflow_2_radio" value="1">
+					<label for="Y">Yes</label>
+				</span>
+				<span class="mr-2">
+					<input type="radio" id="N" name="overflow_2_radio" value="2" onchange="alertFunction2()">
+					<label for="N">No</label>
+				</span>
+				<span>	
+					<input type="radio" id="UK" name="overflow_2_radio" value="3">
+					<label for="UK">Unknown</label>
+				</span>
+			</div>
+			
+			<div id="alert2" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Try to re-direct overflow! - (Overflow = No)
+			</div>
+			
+			
+			
+			<div class="row ml-4 mr-4">
+				<span class="mr-2">Overflow 3:</span>
+				<span class="mr-2">
+					<input type="radio" id="Y" name="overflow_3_radio" value="1">
+					<label for="Y">Yes</label>
+				</span>
+				<span class="mr-2">
+					<input type="radio" id="N" name="overflow_3_radio" value="2" onchange="alertFunction3()">
+					<label for="N">No</label>
+				</span>
+				<span>
+					<input type="radio" id="UK" name="overflow_3_radio" value="3">
+					<label for="UK">Unknown</label>
+				</span>
+			</div>
+			
+			<div id="alert3" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Try to re-direct overflow! - (Overflow = No)
+			</div>
+			
+			
+			
+			
+		</div>
+
+		<div class="mt-8 mb-8 pt-3 pb-3">
+			<h4 class="ml-lg-3 mr-lg-3">
+				III-3. Blockages:
+				<button class="btn" title="Blockages.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1tSZBFC0DpkO71QP-HE1g0pDw4xx5e-iS/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4>
+			<section class="center">
+				<div class="table__wrapper">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="row"></th>
+							<th scope="col">Inflow 1</th>
+							<th scope="col">Inflow 2</th>
+							<th scope="col">Inflow 3</th>
+							<th scope="col">Sheet Flow</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Percent Blockage</th>
+							<td data-header="Inflow 1">
+								<select class="form-control" name="percent_blockage_I1" id="percent_blockage_I1" onchange="alertFunction4(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">&lt.5%</option>
+									<option value="3">.5-5%</option>
+									<option value="4">6-25%</option>
+									<option value="5">26-50%</option>
+									<option value="6">51-75%</option>
+									<option value="7">76-95%</option>
+									<option value="8">>96%</option>
+								</select>
+							</td>
+							<td data-header="Inflow 2">
+								<select class="form-control" name="percent_blockage_I2" id="percent_blockage_I2" onchange="alertFunction4(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">&lt.5%</option>
+									<option value="3">.5-5%</option>
+									<option value="4">6-25%</option>
+									<option value="5">26-50%</option>
+									<option value="6">51-75%</option>
+									<option value="7">76-95%</option>
+									<option value="8">>96%</option>
+								</select>
+							</td>
+							<td data-header="Inflow 3">
+								<select class="form-control" name="percent_blockage_I3" id="percent_blockage_I3" onchange="alertFunction4(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">&lt.5%</option>
+									<option value="3">.5-5%</option>
+									<option value="4">6-25%</option>
+									<option value="5">26-50%</option>
+									<option value="6">51-75%</option>
+									<option value="7">76-95%</option>
+									<option value="8">>96%</option>
+								</select>
+							</td>
+							<td data-header="Sheet Flow">
+								<select class="form-control" name="percent_blockage_SF" id="percent_blockage_SF" onchange="alertFunction4(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">&lt.5%</option>
+									<option value="3">.5-5%</option>
+									<option value="4">6-25%</option>
+									<option value="5">26-50%</option>
+									<option value="6">51-75%</option>
+									<option value="7">76-95%</option>
+									<option value="8">>96%</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="d-none d-md-table-row">
+							<th scope="row"></th>
+							<th scope="col">Overflow 1</th>
+							<th scope="col">Overflow 2</th>
+							<th scope="col">Overflow 3</th>
+						</tr>
+						<tr>
+							<td class="d-none d-md-table-cell"></td>
+							<td data-header="Overflow 1">
+								<select class="form-control" name="percent_blockage_O1" id="percent_blockage_O1" onchange="alertFunction4(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">&lt.5%</option>
+									<option value="3">.5-5%</option>
+									<option value="4">6-25%</option>
+									<option value="5">26-50%</option>
+									<option value="6">51-75%</option>
+									<option value="7">76-95%</option>
+									<option value="8">>96%</option>
+								</select>
+							</td>
+							<td data-header="Overflow 2">
+								<select class="form-control" name="percent_blockage_O2" id="percent_blockage_O2" onchange="alertFunction4(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">&lt.5%</option>
+									<option value="3">.5-5%</option>
+									<option value="4">6-25%</option>
+									<option value="5">26-50%</option>
+									<option value="6">51-75%</option>
+									<option value="7">76-95%</option>
+									<option value="8">>96%</option>
+								</select>
+							</td>
+							<td data-header="Overflow 3">
+								<select class="form-control" name="percent_blockage_O3" id="percent_blockage_O3" onchange="alertFunction4(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">&lt.5%</option>
+									<option value="3">.5-5%</option>
+									<option value="4">6-25%</option>
+									<option value="5">26-50%</option>
+									<option value="6">51-75%</option>
+									<option value="7">76-95%</option>
+									<option value="8">>96%</option>
+								</select>
+							</td>
+							<td class="d-none d-md-table-cell"></td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			</section>
+			
+			<div id="alert4" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Blocked - Remove Blockage! - (>6% Blockage)
+			</div>
+			
+			
+			
+			<section class="center">
+				<div class="table__wrapper">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="row"></th>
+							<th scope="col">Inflow 1</th>
+							<th scope="col">Inflow 2</th>
+							<th scope="col">Inflow 3</th>
+							<th scope="col">Sheet Flow</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Blockage type</th>
+							<td data-header="Inflow 1">
+								<select class="form-control" name="blockage_type_I1" id="blockage_type_I1">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Siltation</option>
+									<option value="3">Organic (dead)</option>
+									<option value="4">Rock</option>
+									<option value="5">Trash</option>
+									<option value="6">Vegetation (living)</option>
+								</select>
+							</td>
+							<td data-header="Inflow 2">
+								<select class="form-control" name="blockage_type_I2" id="blockage_type_I2">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Siltation</option>
+									<option value="3">Organic (dead)</option>
+									<option value="4">Rock</option>
+									<option value="5">Trash</option>
+									<option value="6">Vegetation (living)</option>
+								</select>
+							</td>
+							<td data-header="Inflow 3">
+								<select class="form-control" name="blockage_type_I3" id="blockage_type_I3">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Siltation</option>
+									<option value="3">Organic (dead)</option>
+									<option value="4">Rock</option>
+									<option value="5">Trash</option>
+									<option value="6">Vegetation (living)</option>
+								</select>
+							</td>
+							<td data-header="Sheet Flow">
+								<select class="form-control" name="blockage_type_SF" id="blockage_type_SF">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Siltation</option>
+									<option value="3">Organic (dead)</option>
+									<option value="4">Rock</option>
+									<option value="5">Trash</option>
+									<option value="6">Vegetation (living)</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="d-none d-md-table-row">
+							<th scope="row"></th>
+							<th scope="col">Overflow 1</th>
+							<th scope="col">Overflow 2</th>
+							<th scope="col">Overflow 3</th>
+						</tr>
+						<tr>
+							<td class="d-none d-md-table-cell"></td>
+							<td data-header="Overflow 1">
+								<select class="form-control" name="blockage_type_O1" id="blockage_type_O1">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Siltation</option>
+									<option value="3">Organic (dead)</option>
+									<option value="4">Rock</option>
+									<option value="5">Trash</option>
+									<option value="6">Vegetation (living)</option>
+								</select>
+							</td>
+							<td data-header="Overflow 2">
+								<select class="form-control" name="blockage_type_O2" id="blockage_type_O2">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Siltation</option>
+									<option value="3">Organic (dead)</option>
+									<option value="4">Rock</option>
+									<option value="5">Trash</option>
+									<option value="6">Vegetation (living)</option>
+								</select>
+							</td>
+							<td data-header="Overflow 3">
+								<select class="form-control" name="blockage_type_O3" id="blockage_type_O3">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Siltation</option>
+									<option value="3">Organic (dead)</option>
+									<option value="4">Rock</option>
+									<option value="5">Trash</option>
+									<option value="6">Vegetation (living)</option>
+								</select>
+							</td>
+							<td class="d-none d-md-table-cell"></td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			</section>
+		</div>
+
+		<div class="mt-8 mb-8 pt-3 pb-2">
+			<h4 class="ml-lg-3 mr-lg-3">
+				III-4.  Erosion:
+				<button class="btn" title="Erosion.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1EBvy9K5-ELkfN09H3YcucP3IZ8AwNTi1/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4>
+			<div class="col ml-lg-2 mr-lg-2">Rank the severity of erosion and/or channelization observed in each zone of the rain garden.</div><br>
+			<section class="center">
+				<div class="table__wrapper">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="row"></th>
+							<th scope="col">Zone 1</th>
+							<th scope="col">Zone 2</th>
+							<th scope="col">Zone 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Erosion / Channelization</th>
+							<td data-header="Zone 1">
+								<select class="form-control" name="Erosion_Z1" id="Erosion_Z1" onchange="alertFunction5(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Minor</option>
+									<option value="3">Moderate </option>
+									<option value="4">Extensive</option>
+								</select>
+							</td>
+							<td data-header="Zone 2">
+								<select class="form-control" name="Erosion_Z2" id="Erosion_Z2" onchange="alertFunction5(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Minor</option>
+									<option value="3">Moderate </option>
+									<option value="4">Extensive</option>
+								</select>
+							</td>
+							<td data-header="Zone 3">
+								<select class="form-control" name="Erosion_Z3" id="Erosion_Z3" onchange="alertFunction5(this.value)">
+									<option value="0"></option>
+									<option value="1">None</option>
+									<option value="2">Minor</option>
+									<option value="3">Moderate </option>
+									<option value="4">Extensive</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			</section>
+		</div>
+		
+		<div id="alert5" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Re-route and dissipate water! - (Moderate or Extensive Erosion/Channelization)
+		</div>
+
+		<div class="mt-8 mb-8 pt-3 pb-3">
+			<h4 class="ml-lg-3 mr-lg-3">
+				III-5.  Other Hydrology Concerns:
+				<button class="btn" title="OtherHydro.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1o4kz_BYRHnxPk90NrIpncNZ2QrcjZBGJ/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4>
+			<div class="col ml-lg-2 mr-lg-2">Please describe any situations that may affect hydrology that is not accounted for in the information collected.</div><br>
+			<div class="col-lg-8">
+				<textarea class="form-control" type="text" placeholder="Description here..." name="HydroConc" maxlength="250" onchange="alertFunction6()"></textarea>
+			</div>
+			
+			<div id="alert6" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Report to owner/jurisdiction staff if necessary.
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	
+	<br>
+
+	<!--section IV begin-->
+	<div class="container-fluid section mt-8 mb-8">
+	<div class="ml-lg-2 mr-lg-2 pt-2">
+		<h3><u>IV. ZONE 1 CONDITIONS</u></h3>
+	</div>
+	<div class="pt-3 pb-3">
+		<div class="ml-lg-3 mr-lg-3">
+			<h4>
+				IV-1. Zone 1 Length
+				<button class="btn" title="ZoneLength.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1LnKBd3JoQhv1UWJa-V04A2UFQOLLtYsL/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4>
+		</div>
+		<div class="row mt-2 ml-lg-2 ml-2 mr-lg-2">
+			<div class="col-6 col-md-3 col-lg-3">
+				<label for="zone1-length">Length of Zone 1 (in feet):</label>
+				<input class="form-control" type="number" min="0" step="any" name="zone1-length">
+			</div>
+		</div>
+	</div>
+
+	<div class="pt-3 pb-3">
+		<div class="ml-lg-3 mr-lg-3">
+			<h4>
+				IV-2. Standing Water, Siltation, and Liners:
+				<button class="btn" title="StandingWater.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1jdxzpedCYuc9f1jJ3YFDfDfUbxvVaiA7/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4>
+		</div>
+		<section class="center">
+			<div class="table__wrapper">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="row"></th>
+						<th scope="col" style="white-space: normal;">Sect. 1A (Left Third)</th>
+						<th scope="col" style="white-space: normal;">Sect. 1B (Midpoint)</th>
+						<th scope="col" style="white-space: normal;">Sect. 1C (Right Third)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Standing Water Depth (inches)</th>
+						<td data-header="Sect. 1A (Left Third)"><input class="form-control" type="number" min="0" step="any" name="water-depth-A" onchange="alertFunction7(this.value)"></td>
+						<td data-header="Sect. 1B (Midpoint)"><input class="form-control" type="number" min="0" step="any" name="water-depth-B" onchange="alertFunction7(this.value)"></td>
+						<td data-header="Sect. 1C (Right Third)"><input class="form-control" type="number" min="0" step="any" name="water-depth-C" onchange="alertFunction7(this.value)"></td>
+					</tr>
+					
+					
+					
+					<tr>
+						<th scope="row">Siltation Depth</th>
+						<td data-header="Sect. 1A (Left Third)">
+							<select class="form-control" name="siltation-depth-A" id="siltation-depth-A">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace</option>
+								<option value="3">&lt.25"</option>
+								<option value="4">>.25"</option>
+							</select>
+						</td>
+						<td data-header="Sect. 1B (Midpoint)">
+							<select class="form-control" name="siltation-depth-B" id="siltation-depth-B">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace</option>
+								<option value="3">&lt.25"</option>
+								<option value="4">>.25"</option>
+							</select>
+						</td>
+						<td data-header="Sect. 1C (Right Third)">
+							<select class="form-control" name="siltation-depth-C" id="siltation-depth-C">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace</option>
+								<option value="3">&lt.25"</option>
+								<option value="4">>.25"</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">Is Liner present?</th>
+						<td data-header="Sect. 1A (Left Third)">
+							<select class="form-control" name="liner-present-A" id="liner-present-A">
+								<option value="0"></option>
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+								<option value="3">Unknown</option>
+							</select>
+						</td>
+						<td data-header="Sect. 1B (Midpoint)">
+							<select class="form-control" name="liner-present-B" id="liner-present-B">
+								<option value="0"></option>
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+								<option value="3">Unknown</option>
+							</select>
+						</td>
+						<td data-header="Sect. 1C (Right Third)">
+							<select class="form-control" name="liner-present-C" id="liner-present-C">
+								<option value="0"></option>
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+								<option value="3">Unknown</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">At what depth (inches)?</th>
+						<td data-header="Sect. 1A (Left Third)"><input class="form-control" type="number" min="0" step="any" name="liner-depth-A" onchange="alertFunction8(this.value)"></td>
+						<td data-header="Sect. 1B (Midpoint)"><input class="form-control" type="number" min="0" step="any" name="liner-depth-B" onchange="alertFunction8(this.value)"></td>
+						<td data-header="Sect. 1C (Right Third)"><input class="form-control" type="number" min="0" step="any" name="liner-depth-C" onchange="alertFunction8(this.value)"></td>
+					</tr>
+					
+					
+					
+					
+					<tr>
+						<th scope="row">Is Filter Fabric present?</th>
+						<td data-header="Sect. 1A (Left Third)">
+							<select class="form-control" name="filter-present-A" id="filter-present-A" onchange="alertFunction9(this.value)">
+								<option value="0"></option>
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+								<option value="3">Unknown</option>
+							</select>
+						</td>
+						<td data-header="Sect. 1B (Midpoint)">
+							<select class="form-control" name="filter-present-B" id="filter-present-B" onchange="alertFunction9(this.value)">
+								<option value="0"></option>
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+								<option value="3">Unknown</option>
+							</select>
+						</td>
+						<td data-header="Sect. 1C (Right Third)">
+							<select class="form-control" name="filter-present-C" id="filter-present-C" onchange="alertFunction9(this.value)">
+								<option value="0"></option>
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+								<option value="3">Unknown</option>
+							</select>
+						</td>
+					</tr>
+					
+					
+					
+					<tr>
+						<th scope="row">At what depth (inches)?</th>
+						<td data-header="Sect. 1A (Left Third)"><input class="form-control" type="number" min="0" step="any" name="filter-depth-A"></td>
+						<td data-header="Sect. 1B (Midpoint)"><input class="form-control" type="number" min="0" step="any" name="filter-depth-B"></td>
+						<td data-header="Sect. 1C (Right Third)"><input class="form-control" type="number" min="0" step="any" name="filter-depth-C"></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div id="alert7" class="alert" style="display:none;" >
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+						<strong>Alert:</strong> Report to owner/jurisdiction staff if no rainfall within past 3 days. - (Standing Water Depth > 0)
+			</div>
+			<div id="alert8" class="alert" style="display:none;" >
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+						<strong>Alert:</strong> Report to owner/jurisdiction staff! - (Liner Depth < 15 inches)
+			</div>
+			<div id="alert9" class="alert" style="display:none;" >
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+						<strong>Alert:</strong> Report to owner/jurisdiction staff! - (Filter Fabric is present)
+			</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="pt-3 pb-3">
+		<div class="ml-lg-3 mr-lg-3">
+			<h4>
+				IV-3. Soil Texture:
+				<button class="btn" title="SoilTexture.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1pSC_Wh3Ge_L8lShKjBIflMWJqpRsCDrO/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4>
+		</div>
+		<section class="center">
+			<div class="table__wrapper">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="row"></th>
+						<th scope="col">1A</th>
+						<th scope="col">1B</th>
+						<th scope="col">1C</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Depth to Native Soils (inches)</th>
+						<td data-header="1A"><input class="form-control" type="number" min="0" step="any" name="native-depth-A"></td>
+						<td data-header="1B"><input class="form-control" type="number" min="0" step="any" name="native-depth-B"></td>
+						<td data-header="1C"><input class="form-control" type="number" min="0" step="any" name="native-depth-C"></td>
+					</tr>
+					<tr>
+						<th scope="row">Compacted surface soils?</th>
+						<td data-header="1A">
+							<select class="form-control" name="compacted-soil-A" id="compacted-soil-A">
+								<option value="0"></option>
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+							</select>
+						</td>
+						<td data-header="1B">
+							<select class="form-control" name="compacted-soil-B" id="compacted-soil-B">
+								<option value="0"></option>
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+							</select>
+						</td>
+						<td data-header="1C">
+							<select class="form-control" name="compacted-soil-C" id="compacted-soil-C">
+								<option value="0"></option>
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">Rain Garden Mix Soil Texture</th>
+						<td data-header="1A">
+							<select class="form-control" name="garden-soil-A" id="garden-soil-A" onchange="alertFunction10(this.value)">
+								<option value="0"></option>
+								<option value="1">Sandy</option>
+								<option value="2">Silty</option>
+								<option value="3">Clayey</option>
+							</select>
+						</td>
+						<td data-header="1B">
+							<select class="form-control" name="garden-soil-B" id="garden-soil-B" onchange="alertFunction10(this.value)">
+								<option value="0"></option>
+								<option value="1">Sandy</option>
+								<option value="2">Silty</option>
+								<option value="3">Clayey</option>
+							</select>
+						</td>
+						<td data-header="1C">
+							<select class="form-control" name="garden-soil-C" id="garden-soil-C" onchange="alertFunction10(this.value)">
+								<option value="0"></option>
+								<option value="1">Sandy</option>
+								<option value="2">Silty</option>
+								<option value="3">Clayey</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">Native Soil Texture</th>
+						<td data-header="1A">
+							<select class="form-control" name="native-soil-A" id="native-soil-A" onchange="alertFunction10(this.value)">
+								<option value="0"></option>
+								<option value="1">Sandy</option>
+								<option value="2">Silty</option>
+								<option value="3">Clayey</option>
+							</select>
+						</td>
+						<td data-header="1B">
+							<select class="form-control" name="native-soil-B" id="native-soil-B" onchange="alertFunction10(this.value)">
+								<option value="0"></option>
+								<option value="1">Sandy</option>
+								<option value="2">Silty</option>
+								<option value="3">Clayey</option>
+							</select>
+						</td>
+						<td data-header="1C">
+							<select class="form-control" name="native-soil-C" id="native-soil-C" onchange="alertFunction10(this.value)">
+								<option value="0"></option>
+								<option value="1">Sandy</option>
+								<option value="2">Silty</option>
+								<option value="3">Clayey</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="alert10" class="alert" style="display:none;" >
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+						<strong>Alert:</strong> If very clayey - Report to owner/jurisdiction staff!
+			</div>
+			
+			</div>
+		</section>
+		<div class="row pt-1 mt-2 ml-2 mr-2 ml-lg-4 mr-lg-4">Native Soils: The soils which the facility was built in; not soil added to make the rain garden</div>
+	</div>
+
+	<div class="pt-3 pb-3">
+		<div class="ml-lg-3 mr-lg-3">
+			<h4>
+				IV-4. Other Substrate Observations:
+				<button class="btn" title="SubstrateObservations.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1AA_6UzQ-stfMhE22HRc7PAh1XbBvWQRG/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4> 
+		</div>
+		<div class="col-lg-8 ml-lg-2 mr-lg-2">
+			<label for="substrate-observations">
+				Please describe any observations about soils that 
+				are not accounted for in the information collected.
+			</label>
+			<textarea class="form-control" type="text" placeholder="Description here..." name="substrate-observations" maxlength="250" onchange="alertFunction11()"></textarea>
+			<!--<input class="form-control" type="text" name="substrate-observations" maxlength="250"><br>-->
+		</div>
+		<div id="alert11" class="alert" style="display:none;" >
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+						<strong>Alert:</strong> Report to owner/jurisdiction staff if necessary.
+		</div>
+	</div>
+	</div>
+	</div>
+	<br>
+
+	<!--section V begin-->
+	<div class="container-fluid section mt-8 mb-8">
+		<div class="ml-lg-2 mr-lg-2 pt-2 pb-2">
+			<h3><u>V. OVERALL SUBSTRATES, VEGETATION, CONDITIONS</u></h3>
+		</div>
+		<div class="ml-lg-3 mr-lg-3">
+			<h4>
+				V-1. Substrate:
+				<button class="btn" title="Substrate.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/18R_Wak_vw_P3cxAbRHrujHKzE3T-6DDO/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>
+			</h4>
+		</div>
+		<div class="row ml-3 mr-3 mb-3"> 
+			Use the key and guide below to assess characteristics
+			in each zone of the rain garden.
+		</div>
+		<section class="center">
+			<div class="table__wrapper">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="row"></th>
+						<th scope="col">1A</th>
+						<th scope="col">1B</th>
+						<th scope="col">1C</th>
+						<th scope="col">2</th>
+						<th scope="col">3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Type of Mulch</th>
+						<td data-header="1A">
+							<select class="form-control" name="mulch-type-1A" id="mulch-type-1A">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Shredded Mulch</option>
+								<option value="3">Fine Mulch</option>
+								<option value="4">Coarse Mulch</option>
+							</select>
+						</td>
+						<td data-header="1B">
+							<select class="form-control" name="mulch-type-1B" id="mulch-type-1B">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Shredded Mulch</option>
+								<option value="3">Fine Mulch</option>
+								<option value="4">Coarse Mulch</option>
+							</select>
+						</td>
+						<td data-header="1C">
+							<select class="form-control" name="mulch-type-1C" id="mulch-type-1C">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Shredded Mulch</option>
+								<option value="3">Fine Mulch</option>
+								<option value="4">Coarse Mulch</option>
+							</select>
+						</td>
+						<td data-header="2">
+							<select class="form-control" name="mulch-type-2" id="mulch-type-2">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Shredded Mulch</option>
+								<option value="3">Fine Mulch</option>
+								<option value="4">Coarse Mulch</option>
+							</select>
+						</td>
+						<td data-header="3">
+							<select class="form-control" name="mulch-type-3" id="mulch-type-3">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Shredded Mulch</option>
+								<option value="3">Fine Mulch</option>
+								<option value="4">Coarse Mulch</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">Depth of Mulch</th>
+						<td data-header="1A">
+							<select class="form-control" name="mulch-depth-1A" id="mulch-depth-1A" onchange="alertFunction12(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt1"</option>
+								<option value="3">1-3"</option>
+								<option value="4">>3"</option>
+							</select>
+						</td>
+						<td data-header="1B">
+							<select class="form-control" name="mulch-depth-1B" id="mulch-depth-1B" onchange="alertFunction12(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt1"</option>
+								<option value="3">1-3"</option>
+								<option value="4">>3"</option>
+							</select>
+						</td>
+						<td data-header="1C">
+							<select class="form-control" name="mulch-depth-1C" id="mulch-depth-1C" onchange="alertFunction12(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt1"</option>
+								<option value="3">1-3"</option>
+								<option value="4">>3"</option>
+							</select>
+						</td>
+						<td data-header="2">
+							<select class="form-control"name="mulch-depth-2" id="mulch-depth-2" onchange="alertFunction12(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt1"</option>
+								<option value="3">1-3"</option>
+								<option value="4">>3"</option>
+							</select>
+						</td>
+						<td data-header="3">
+							<select class="form-control" name="mulch-depth-3" id="mulch-depth-3" onchange="alertFunction12(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt1"</option>
+								<option value="3">1-3"</option>
+								<option value="4">>3"</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</section>
+		<div id="alert12" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Add mulch or report to owner/jurisdiction staff! - (Depth of Mulch = None or Trace)
+		</div>
+		
+		<div class="mt-2 mb-4 ml-4 mr-4">
+			<p>Shredded Mulch: stringy/fibrous with long, coarse particles of varying lengths</p>
+			<p>Fine Mulch: ground wood chips or barks with particles 1” or less, leaf litter and dead vegetation</p>
+			<p>Coarse Mulch: arborist chips, nuggets, play chips with particles typically 1–3”</p>
+		</div>
+	<section class="center">
+	<div class="table__wrapper">
+		<table class="table">
+		<thead>
+			<tr>
+			<th scope="row"></th>
+			<th scope="col">Zone 1</th>
+			<th scope="col">Zone 2</th>
+			<th scope="col">Zone 3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">
+					Mulch Coverage
+					<button class="btn" title="Mulch.pdf">
+						<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1nVZY_jvltZor8uMJ7n6RpRvwPHhdoQAD/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+					</button>
+				</th>
+				<td data-header="Zone 1">
+					<select class="form-control" name="mulch-coverage-1" id="mulch-coverage-1">
+					<option value="0"></option>
+					<option value="1">None</option>
+					<option value="2">Trace &lt.5%</option>
+					<option value="3">.5-5%</option>
+					<option value="4">6-25%</option>
+					<option value="5">26-50%</option>
+					<option value="6">51-75%</option>
+					<option value="7">76-95%</option>
+					<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 2">
+					<select class="form-control" name="mulch-coverage-2" id="mulch-coverage-2">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 3">
+					<select class="form-control" name="mulch-coverage-3" id="mulch-coverage-3">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">
+					Bare Ground Coverage
+					<button class="btn" title="BareGround.pdf">
+						<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1Q3GTA_wFRNL0t2fH5jWX49N8eHdj-mk3/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+					</button>
+				</th>
+				<td data-header="Zone 1">
+					<select class="form-control" name="ground-coverage-1" id="ground-coverage-1" onchange="alertFunction13(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 2">
+					<select class="form-control" name="ground-coverage-2" id="ground-coverage-2" onchange="alertFunction13(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 3">
+					<select class="form-control" name="ground-coverage-3" id="ground-coverage-3" onchange="alertFunction13(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+					</select>
+				</td>
+			</tr>
+			
+			
+			
+			
+			<tr>
+				<th scope="row">
+					Pea Gravel Coverage
+					<button class="btn" title="PeaGravel.pdf">
+						<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1dYtKPX9yjTW0d3oA6q-I1zooZc5tQRMi/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+					</button>
+				</th>
+				<td data-header="Zone 1">
+					<select class="form-control" name="gravel-coverage-1" id="gravel-coverage-1">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 2">
+					<select class="form-control" name="gravel-coverage-2" id="gravel-coverage-2">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 3">
+					<select class="form-control" name="gravel-coverage-3" id="gravel-coverage-3">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">
+					Drain Rock Coverage
+					<button class="btn" title="DrainRock.pdf">
+						<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1CYWOLjA_9qcVsJc31sG4RHdQ_u7EZ1o6/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+					</button>
+				</th>
+				<td data-header="Zone 1">
+					<select class="form-control" name="drain-coverage-1" id="drain-coverage-1">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 2">
+					<select class="form-control" name="drain-coverage-2" id="drain-coverage-2">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 3">
+					<select class="form-control" name="drain-coverage-3" id="drain-coverage-3">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">
+					2-12" Rock Coverage
+					<button class="btn" title="MedRock.pdf">
+						<a class="fa fa-info-circle" href="https://drive.google.com/file/d/15LIChF6FasQ0ExapQlUianicqFtHmWcL/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+					</button>
+				</th>
+				<td data-header="Zone 1">
+					<select class="form-control" name="mid-coverage-1" id="mid-coverage-1">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 2">
+					<select class="form-control" name="mid-coverage-2" id="mid-coverage-2">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 3">
+					<select class="form-control" name="mid-coverage-3" id="mid-coverage-3">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">>12" Rock/Log Coverage
+					<button class="btn" title="LargeRock.pdf">
+						<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1g-CQtICauTQgZH_jevgGvv6b9lL_NnL9/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+					</button>
+				</th>
+				<td data-header="Zone 1">
+					<select class="form-control" name="low-coverage-1" id="low-coverage-1">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 2">
+					<select class="form-control" name="low-coverage-2" id="low-coverage-2">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+				<td data-header="Zone 3">
+					<select class="form-control" name="low-coverage-3" id="low-coverage-3">
+						<option value="0"></option>
+						<option value="1">None</option>
+						<option value="2">Trace &lt.5%</option>
+						<option value="3">.5-5%</option>
+						<option value="4">6-25%</option>
+						<option value="5">26-50%</option>
+						<option value="6">51-75%</option>
+						<option value="7">76-95%</option>
+						<option value="8">>96%</option>
+					</select>
+				</td>
+			</tr>
+		</tbody>
+		</table>
+		<div id="alert13" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Add mulch or report to owner/jurisdiction staff! - (Bare Ground Coverage > 6%)
+		</div>
+	</div>
+	</section>
+
+		<div class="mt-8 mb-8 pt-3 pb-3">
+		<div class="ml-lg-3 mr-lg-3">
+			<h4>V-2. Rain Garden Vegetation:</h4>
+		</div>
+		<div class="row ml-3 mr-3"> 
+			Please use cover classes and vigor codes (below) to indicate
+			coverage and plant figor ranking for each vegetation type. This is a visual observation in which you are 
+			only looking at the surface of the rain garden. Please use field guides provided to identify target problem plants.
+			<p>For vigor, refer to these <a href="https://drive.google.com/file/d/1c_0LAslsvE23yY1_G-5WrJKz-xfqiylY/view?usp=sharing" title="Vigor.pdf" target="_blank">slides</a>.</p>
+		</div>
+		<section class="center">
+			<div class="table__wrapper">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="row">Vegetation Type</th>
+						<th scope="row"></th>
+						<th scope="col">Zone 1</th>
+						<th scope="col">Zone 2</th>
+						<th scope="col">Zone 3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"><strong>All Vegetation:</strong></th>
+						<td class="title">Coverage
+							<button class="btn" title="AllVeg.pdf">
+								<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1zTRRVqMFr9TBUesGlRtseDykpIgIvvDv/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+							</button>
+						</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="vegetation-coverage-1" id="vegetation-coverage-1">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="vegetation-coverage-2" id="vegetation-coverage-2">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="vegetation-coverage-3" id="vegetation-coverage-3">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><strong>Target Problem Plants:</strong></th>
+						<td class="title">Coverage
+							<button class="btn" title="TargetPlants.pdf">
+								<a class="fa fa-info-circle" href="https://drive.google.com/file/d/10onxaE3OWL2rYfzP3_svfseYyZUNBqwt/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+							</button>
+						</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="problem-coverage-1" id="problem-coverage-1" onchange="alertFunction14(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="problem-coverage-2" id="problem-coverage-2" onchange="alertFunction14(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="problem-coverage-3" id="problem-coverage-3" onchange="alertFunction14(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+					</tr>
+					
+					
+					
+					
+					<tr>
+						<td></td>
+						<td class="title">Vigor</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="problem-vigor-1" id="problem-vigor-1">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="problem-vigor-2" id="problem-vigor-2">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="problem-vigor-3" id="problem-vigor-3">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><strong>Non-Target Weeds:</strong></th>
+						<td class="title">Coverage
+							<button class="btn" title="NonTargetWeeds.pdf">
+								<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1ci2sSDhzdwaqivlFJHTL9i4UA-chj2LC/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+							</button>
+						</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="weeds-coverage-1" id="weeds-coverage-1" onchange="alertFunction15(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="weeds-coverage-2" id="weeds-coverage-2" onchange="alertFunction15(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="weeds-coverage-3" id="weeds-coverage-3" onchange="alertFunction15(this.value)">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+					</tr>
+					
+					
+					
+					<tr>
+						<td></td>
+						<td class="title">Vigor</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="weeds-vigor-1" id="weeds-vigor-1">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="weeds-vigor-2" id="weeds-vigor-2">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="weeds-vigor-3" id="weeds-vigor-3">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><strong>Deciduous Shrubs/Trees:</strong></th>
+						<td class="title">Coverage
+							<button class="btn" title="Deciduous.pdf">
+								<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1gvZusQCSZGSUpDubfGPWYY6sHjtexm3O/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+							</button>
+						</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="deciduous-coverage-1" id="deciduous-coverage-1">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="deciduous-coverage-2" id="deciduous-coverage-2">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="deciduous-coverage-3" id="deciduous-coverage-3">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="title">Vigor</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="deciduous-vigor-1" id="deciduous-vigor-1" onchange="alertFunction16(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="deciduous-vigor-2" id="deciduous-vigor-2" onchange="alertFunction16(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="deciduous-vigor-3" id="deciduous-vigor-3" onchange="alertFunction16(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><strong>Evergreen Shrubs/Trees:</strong></th>
+						<td class="title">Coverage
+							<button class="btn" title="Evergreen.pdf">
+								<a class="fa fa-info-circle" href="https://drive.google.com/file/d/118ZvaIEJtvWP67n4rdS0RzFJCiDc1L98/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+							</button>
+						</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="evergreen-coverage-1" id="evergreen-coverage-1">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="evergreen-coverage-2" id="evergreen-coverage-2">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="evergreen-coverage-3" id="evergreen-coverage-3">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="title">Vigor</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="evergreen-vigor-1" id="evergreen-vigor-1" onchange="alertFunction16_2(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="evergreen-vigor-2" id="evergreen-vigor-2" onchange="alertFunction16_2(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="evergreen-vigor-3" id="evergreen-vigor-3" onchange="alertFunction16_2(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><strong>Herbaceous:</strong></th>
+						<td class="title">Coverage
+							<button class="btn" title="Herbaceous.pdf">
+								<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1BD4_fvz19oqPE0n1S70HipBcFO-SNzGk/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+							</button>
+						</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="herbaceous-coverage-1" id="herbaceous-coverage-1">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="herbaceous-coverage-2" id="herbaceous-coverage-2">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="herbaceous-coverage-3" id="herbaceous-coverage-3">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="title">Vigor</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="herbaceous-vigor-1" id="herbaceous-vigor-1" onchange="alertFunction16_3(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="herbaceous-vigor-2" id="herbaceous-vigor-2" onchange="alertFunction16_3(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="herbaceous-vigor-3" id="herbaceous-vigor-3" onchange="alertFunction16_3(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><strong>Ground Cover:</strong></th>
+						<td class="title">Coverage
+							<button class="btn" title="GroundCover.pdf">
+								<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1sxLQRNjGWHjapWaXJzhPAL3_zqPGrj8p/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+							</button>
+						</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="soil-coverage-1" id="soil-coverage-1">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="soil-coverage-2" id="soil-coverage-2">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="soil-coverage-3" id="soil-coverage-3">
+								<option value="0"></option>
+								<option value="1">None</option>
+								<option value="2">Trace &lt.5%</option>
+								<option value="3">.5-5%</option>
+								<option value="4">6-25%</option>
+								<option value="5">26-50%</option>
+								<option value="6">51-75%</option>
+								<option value="7">76-95%</option>
+								<option value="8">>96%</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="title">Vigor</td>
+						<td data-header="Zone 1">
+							<select class="form-control" name="soil-vigor-1" id="soil-vigor-1" onchange="alertFunction16_4(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 2">
+							<select class="form-control" name="soil-vigor-2" id="soil-vigor-2" onchange="alertFunction16_4(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+						<td data-header="Zone 3">
+							<select class="form-control" name="soil-vigor-3" id="soil-vigor-3" onchange="alertFunction16_4(this.value)">
+								<option value="0"></option>
+								<option value="1">Poor</option>
+								<option value="2">Moderate</option>
+								<option value="3">Robust</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div id="alert14" class="alert" style="display:none;" >
+					<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+					<strong>Alert:</strong> Remove unwanted plants or report to owner/jurisdiction staff! (Target Problem Plants > .5%)
+			</div>
+			
+			<div id="alert15" class="alert" style="display:none;" >
+					<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+					<strong>Alert:</strong> Remove weeds or report to owner/jurisdiction staff! (Non-Target Weeds > 6%)
+			</div>
+			
+			<div id="alert16" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Report to owner/jurisdiction staff! - (Deciduous Shrubs/Trees vigor = poor)
+			</div>
+			
+			<div id="alert16_2" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Report to owner/jurisdiction staff! - (Evergreen Shrubs/Trees vigor = poor)
+			</div>
+			
+			<div id="alert16_3" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Report to owner/jurisdiction staff! - (Herbaceous vigor = poor)
+			</div>
+			
+			<div id="alert16_4" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Report to owner/jurisdiction staff! - (Ground Cover vigor = poor)
+			</div>
+			
+			
+			</div>
+		</section>
+		</div>
+
+		<div class="mt-8 mb-8 pt-3 pb-3">
+			<div class="ml-lg-3 mr-lg-3">
+				<h4>V-3. Other Vegetation Observations:</h4> 
+			</div>
+			<div class="col-lg-8 ml-lg-2 mr-lg-2">
+				<label for="other-observations">
+				Please describe any vegetation observations that are not accounted for in the
+				information collected.
+				</label>
+				<textarea class="form-control" placeholder="Description here..." type="text" name="vegetation-observations" maxlength="250" onchange="alertFunction17()"></textarea>
+			</div>
+			<div id="alert17" class="alert" style="display:none;" >
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Alert:</strong> Report to owner/jurisdiction staff if necessary!
+			</div>
+			
+		</div>
+
+		<div class="mt-8 mb-8 pt-3 pb-3">	
+			<div class="ml-lg-3 mr-lg-3">
+				<h4>V-4. Public Amenities:</h4>
+			</div> 
+			<div class="ml-2 mr-2 ml-lg-4 mr-lg-4 mt-2 mb-2 pb-2">
+			Select a rank to answer each of the following questions:
+			</div>
+			<section class="center">
+				<div class="table__wrapper">
+				<table class="table">
+					<tbody>
+						<tr>
+							<th class="title" scope="row">How visible is the site to the public?
+								<button class="btn" title="SiteView.pdf">
+									<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1MbwfikAr0j-WdNiVwIHdWGF2rtageQ5d/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+								</button>
+							</th>
+							<td>
+								<select class="form-control" name="visible-to-public" id="visible-to-public">
+									<option value="0"></option>
+									<option value="1">Low</option>
+									<option value="2">Moderate</option>
+									<option value="3">High</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th class="title" scope="row">How aesthetically pleasing is this site?
+								<button class="btn" title="SiteView.pdf">
+									<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1MbwfikAr0j-WdNiVwIHdWGF2rtageQ5d/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+								</button>
+							</th>
+							<td>
+								<select class="form-control" name="aesthetically-pleasing" id="aesthetically-pleasing">
+									<option value="0"></option>
+									<option value="1">Low</option>
+									<option value="2">Moderate</option>
+									<option value="3">High</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th class="title" scope="row">How well maintained is this site? 								
+								<button class="btn" title="SiteView.pdf">
+									<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1MbwfikAr0j-WdNiVwIHdWGF2rtageQ5d/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+								</button></th>
+							<td>
+								<select class="form-control" name="well-maintained" id="well-maintained" onchange="alertFunction18(this.value)">
+									<option value="0"></option>
+									<option value="1">Low</option>
+									<option value="2">Moderate</option>
+									<option value="3">High</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="alert18" class="alert" style="display:none;" >
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				<strong>Alert:</strong> Remove trash or prune if applicable! - (Site maintenance is low)
+				</div>
+				
+				</div>
+			</section>
+			<div class="ml-2 mr-2 ml-lg-4 mr-lg-4 mt-2 mb-2 pb-2">
+				<span class="mr-1">
+				Is there any educational signage affiliated with the rain garden?
+				</span>
+				<span class="mr-1">
+					<input type="radio" id="signage-yes" name="signage-radio" value="1">
+					<label for="signage-yes">Yes</label>
+				</span>
+				<span>
+					<input type="radio" id="signage-no" name="signage-radio" value="2">
+					<label for="signage-no">No</label>
+				</span>
+				<button class="btn" title="SiteSignage.pdf">
+					<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1W2JeJdcpQZz46Quhdpbo7eguNClS_KWj/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+				</button>	
+			</div>
+		</div>
+
+		<div class="mt-8 mb-10 pt-3 pb-3">
+			<div class="ml-lg-3 mr-lg-3">
+				<h4>V-5. Other Observations:
+					<button class="btn" title="OtherObservations.pdf">
+						<a class="fa fa-info-circle" href="https://drive.google.com/file/d/1meB2YQ-UdVOePdmacFhMvuSya6ozGT0b/view?usp=sharing" target="_blank" rel="noopener noreferrer"></a>
+					</button>	
+				</h4> 
+			</div>
+			<div class="col-lg-8 ml-lg-2 mr-lg-2">
+				<label for="other-observations">
+				Please describe any other observations that are not accounted for in the
+				information collected:
+				</label>
+				<textarea class="form-control textarea-resize" type="text" placeholder="Description here..." name="other-observations" maxlength="250" onchange="alertFunction19()"></textarea>
+			</div>
+			<div id="alert19" class="alert" style="display:none;" >
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				<strong>Alert:</strong> Report to owner/jurisdiction staff if necessary!
+			</div>
+			
+			<div class="col-lg-2 pt-2 ml-lg-2 mr-lg-2">
+				<label for="end-time">End Time:</label>
+				<input class="form-control" type="time" name="end-time">
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="container">
+		<div class="text-right mr-2">
+			<input class="btn btn-primary" type="submit" formtarget="_blank" value="Submit">
+		</div>
+	</div>
+</form>
+</hr>
+<script>
+function alertFunction1() {
+  document.getElementById("alert1").style.display = "block";
+}
+function alertFunction2() {
+  document.getElementById("alert2").style.display = "block";
+}
+function alertFunction3() {
+  document.getElementById("alert3").style.display = "block";
+}
+function alertFunction4(val) {
+	var num = parseInt(val);
+	if (num > 3){
+	document.getElementById("alert4").style.display = "block";
+	}
+}
+function alertFunction5(val) {
+	var num = parseInt(val);
+	if (num > 2){
+	document.getElementById("alert5").style.display = "block";
+	}
+}
+function alertFunction6() {
+  document.getElementById("alert6").style.display = "block";
+}
+function alertFunction7(val) {
+	var num = parseInt(val);
+	if (num > 0){
+	document.getElementById("alert7").style.display = "block";
+	}
+}
+function alertFunction8(val) {
+	var num = parseInt(val);
+	if (num < 15){
+	document.getElementById("alert8").style.display = "block";
+	}
+}
+function alertFunction9(val) {
+	var num = parseInt(val);
+	if (num == 1){
+	document.getElementById("alert9").style.display = "block";
+	}
+}
+function alertFunction10(val) {
+	var num = parseInt(val);
+	if (num == 3){
+	document.getElementById("alert10").style.display = "block";
+	}
+}
+function alertFunction11(val) {
+	document.getElementById("alert11").style.display = "block";
+}
+function alertFunction12(val) {
+	var num = parseInt(val);
+	if (0 < num < 3){
+	document.getElementById("alert12").style.display = "block";
+	}
+}
+
+function alertFunction13(val) {
+	var num = parseInt(val);
+	if (num > 3){
+	document.getElementById("alert13").style.display = "block";
+	}
+}
+function alertFunction14(val) {
+	var num = parseInt(val);
+	if (num > 2){
+	document.getElementById("alert14").style.display = "block";
+	}
+}
+function alertFunction15(val) {
+	var num = parseInt(val);
+	if (num > 3){
+	document.getElementById("alert15").style.display = "block";
+	}
+}
+function alertFunction16(val) {
+	var num = parseInt(val);
+	if (num == 1){
+	document.getElementById("alert16").style.display = "block";
+	}
+}
+function alertFunction16_2(val) {
+	var num = parseInt(val);
+	if (num == 1){
+	document.getElementById("alert16_2").style.display = "block";
+	}
+}
+function alertFunction16_3(val) {
+	var num = parseInt(val);
+	if (num == 1){
+	document.getElementById("alert16_3").style.display = "block";
+	}
+}
+function alertFunction16_4(val) {
+	var num = parseInt(val);
+	if (num == 1){
+	document.getElementById("alert16_4").style.display = "block";
+	}
+}
+
+
+
+function alertFunction17(val) {
+	document.getElementById("alert17").style.display = "block";
+}
+function alertFunction18(val) {
+	var num = parseInt(val);
+	if (num == 1){
+	document.getElementById("alert18").style.display = "block";
+	}
+}
+function alertFunction19(val) {
+	document.getElementById("alert19").style.display = "block";
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+test1: Normal
+
+//test that should fail:
+test2: Description (string) of section II is more than 250 characters
+test3: Missing names
+test4: Missing Survey Date
+test5: Missing Start Time
+test6: Missing Address
+test7: Missing City
+test8: Missing County
+test9: Missing Rainfall Today
+test10: Missing Rainfall Yesterday
+test11: Missing Age of Site
+test12: Missing Contributing Water Source(s)
+test13: Missing Inflow 1 Percent Blockage
+test14: Missing Inflow 1 Blockage Type
+test15: Missing Sect. 1A Standing Water Depth
+test16: Missing Sect. 1A Siltation Depth
+test17: Missing Sect. 1A Liner Present
+test18: Missing Sect. 1A Liner Depth
+test19: Missing Sect. 1A Filter Fabric Present
+test20: Missing Sect. 1A Filter Fabric Depth
+test21: Missing Sect. 1A Depth to Native Soils
+test22: Missing Sect. 1A Compacted Surface Soils
+test23: Missing Sect. 1A Rain Garden Mix Soil Texture
+test24: Missing Sect. 1A Native Soil Texture
+test25: Missing Sect. 1B Standing Water Depth
+test26: Missing Sect. 1B Siltation Depth
+test27: Missing Sect. 1B Liner Present
+test28: Missing Sect. 1B Liner Depth
+test29: Missing Sect. 1B Filter Fabric Present
+test30: Missing Sect. 1B Filter Fabric Depth
+test31: Missing Sect. 1B Depth to Native Soils
+test32: Missing Sect. 1B Compacted Surface Soils
+test33: Missing Sect. 1B Rain Garden Mix Soil Texture
+test34: Missing Sect. 1B Native Soil Texture
+test35: Missing Sect. 1C Standing Water Depth
+test36: Missing Sect. 1C Siltation Depth
+test37: Missing Sect. 1C Liner Present
+test38: Missing Sect. 1C Liner Depth
+test39: Missing Sect. 1C Filter Fabric Present
+test40: Missing Sect. 1C Filter Fabric Depth
+test41: Missing Sect. 1C Compacted Surface Soils
+test42: Missing Sect. 1C Rain Garden Mix Soil Texture
+test43: Missing Sect. 1C Native Soil Texture
+test44: Missing 1A Type of Mulch
+test45: Missing 1B Type of Mulch
+test46: Missing 1C Type of Mulch
+test47: Missing 2 Type of Mulch
+test48: Missing 3 Type of Mulch
+test49: Missing 1A Mulch Depth
+test50: Missing 1B Mulch Depth
+test51: Missing 1C Mulch Depth
+test52: Missing 2 Mulch Depth
+test53: Missing 3 Mulch Depth
+test54: Missing Zone 1 Mulch Coverage
+test55: Missing Zone 1 Bare Ground Coverage
+test56: Missing Zone 1 Pea Gravel Coverage
+test57: Missing Zone 1 Drain Rock Coverage
+test58: Missing Zone 2 Mulch Coverage
+test59: Missing Zone 2 Bare Ground Coverage
+test60: Missing Zone 2 All Vegetation Coverage
+test61: Missing Zone 2 Non-Target Weeds Coverage
+test62: Missing Zone 3 Mulch Coverage
+test63: Missing Zone 3 Bare Ground Coverage
+test64: Missing Zone 3 All Vegetation Coverage
+test65: Missing Zone 3 Non-Target Weeds Coverage
+test66: Missing End Time 
+
+test67: Missing Sect. 1C Depth to Native Soils
+
+//Tests that should pass
+
+test68: Missing Inflow 2 Percent Blockage
+test69: Missing Site Name
+test70: Missing Group Code
+
+

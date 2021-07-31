@@ -1,0 +1,28 @@
+# This file configures docker-compose to run the golang server and mariaDB 
+# database in their own separate containers.
+services:
+    server:
+        restart: always
+        build: 
+            context: .
+            dockerfile: ./server/Dockerfile
+        ports: 
+            - '80:${SERVER_PORT}'
+        env_file:
+            - .env
+        depends_on:
+            - db
+
+    db:
+        image: mariadb
+        restart: always
+        volumes:
+            # mounting db file outside the container so it persists:
+            - "./db/database:/var/lib/mysql"
+            # init script to create tables:
+            - "./db/create_table_statements.sql:/docker-entrypoint-initdb.d/create_table_statements.sql"
+        environment:
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
