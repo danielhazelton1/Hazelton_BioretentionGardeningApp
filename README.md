@@ -29,9 +29,10 @@ Our client researches pollution from water runoff and rain gardens which provide
 - Selenium Framework (for testing)
 
 # Pictures:
-## **Final Website Design**
+### **Final Website Design**
 ![BRGA1](https://user-images.githubusercontent.com/87416441/127755400-8e2a45b0-bd37-449c-906f-9828d69f1020.png)
-## **Mobile view**
+### **Mobile view:**
 ![BRGA2](https://user-images.githubusercontent.com/87416441/127755401-b1b5e8f0-cb46-4023-b1d1-13b5c1c12712.png)
+### **Different data entry types and alert example:**
 ![BRGA3](https://user-images.githubusercontent.com/87416441/127755404-161d8792-b087-40a3-9371-3dd1e2a9792e.png)
 
